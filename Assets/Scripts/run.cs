@@ -1,22 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using Unity.VisualScripting;
+using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class run : MonoBehaviour
 {
-    public GameObject gameObject;
-    public Vector3 vector3;
-
-    // Start is called before the first frame update
+    Rigidbody2D d;
+    SpriteRenderer fl;
     void Start()
     {
-        vector3 = transform.position;
+        d = GetComponent<Rigidbody2D>();
+        fl = GetComponent<SpriteRenderer>();
     }
-    // Update is called once per frame
     void FixedUpdate()
     {
-        vector3 = new Vector3(transform.position.x+0.01f, transform.position.y+0.01f, transform.position.z+0.01f);
-        transform.position = vector3;
+        transform.position += new Vector3(0.05f, 0, 0);
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            d.gravityScale *= -1;
+            if (d.gravityScale == -20)
+            {
+                fl.flipY = true;
+            }
+            else
+            {
+                fl.flipY = false;
+            }
+            
+        }
     }
 }
+
