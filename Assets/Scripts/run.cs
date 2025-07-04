@@ -10,11 +10,11 @@ using UnityEngine.UIElements;
 public class run : MonoBehaviour
 {
     Rigidbody2D d;
-    SpriteRenderer fl;
+    Transform fl;
     void Start()
     {
         d = GetComponent<Rigidbody2D>();
-        fl = GetComponent<SpriteRenderer>();
+        fl = GetComponent<Transform>();
     }
     void FixedUpdate()
     {
@@ -25,15 +25,15 @@ public class run : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             d.gravityScale = -d.gravityScale;
-            if (d.gravityScale == -5)
-            {
-                fl.flipY = true;
-            }
-            else
-            {
-                fl.flipY = false;
-            }
+            fl.rotation = Quaternion.Euler(fl.rotation.eulerAngles.x+180, fl.rotation.eulerAngles.y, fl.rotation.eulerAngles.z);
 
+        }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("kill"))
+        {
+            Destroy(gameObject);
         }
     }
 }
