@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using TMPro;
 using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
@@ -11,16 +13,20 @@ public class run : MonoBehaviour
 {
     Rigidbody2D d;
     Transform fl;
+    // GameObject gr;
     void Start()
     {
         d = GetComponent<Rigidbody2D>();
         fl = GetComponent<Transform>();
+        // gr = GameObject.FindGameObjectWithTag("grChick");
     }
     void FixedUpdate()
     {
         if (transform.position.x <= 0)
         {
             transform.Translate(Vector2.right * Time.deltaTime * 2);
+            // gr.transform.Translate(Vector2.right * Time.deltaTime * 0.1f);
+            
         }
         if (Input.GetKey(KeyCode.Mouse0))
         {
