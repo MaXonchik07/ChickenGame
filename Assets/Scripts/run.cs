@@ -18,11 +18,14 @@ public class run : MonoBehaviour
     }
     void FixedUpdate()
     {
-        transform.position += new Vector3(0.05f, 0, 0);
+        if (transform.position.x <= 0)
+        {
+            transform.Translate(Vector2.right * Time.deltaTime * 2);
+        }
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            d.gravityScale *= -1;
-            if (d.gravityScale == -20)
+            d.gravityScale = -d.gravityScale;
+            if (d.gravityScale == -5)
             {
                 fl.flipY = true;
             }
@@ -30,8 +33,9 @@ public class run : MonoBehaviour
             {
                 fl.flipY = false;
             }
-            
+
         }
     }
 }
+
 
