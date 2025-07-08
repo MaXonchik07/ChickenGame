@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Xml;
 using TMPro;
 using Unity.Collections;
 using Unity.Mathematics;
@@ -19,25 +20,20 @@ public class run : MonoBehaviour
     private float timer;
     private float lastFlipTime = 0;
     public float test;
+    public float speed = 3;
+    public GameObject effect;
     void Start()
     {
         d = GetComponent<Rigidbody2D>();
         fl = GetComponent<Transform>();
-        
+
     }
     void FixedUpdate()
     {
         timer += Time.deltaTime;
         if (timer <= movetimer)
         {
-            transform.Translate(Vector2.right * Time.deltaTime * 2);
-
-        }
-        if (Input.GetKey(KeyCode.Mouse0) && timer >= lastFlipTime + cdTime)
-        {
-            lastFlipTime = timer;
-            d.gravityScale = -d.gravityScale;
-            fl.rotation = Quaternion.Euler(fl.rotation.eulerAngles.x+180, fl.rotation.eulerAngles.y, fl.rotation.eulerAngles.z);
+            transform.Translate(Vector2.right * Time.deltaTime * speed);
 
         }
     }
@@ -46,6 +42,16 @@ public class run : MonoBehaviour
         if (collision.gameObject.CompareTag("kill"))
         {
             Destroy(gameObject);
+            Instantiate(effect, transform.position, quaternion.identity);
+        }
+    }
+    public void jumpButton()
+    {
+        if (timer >= lastFlipTime + cdTime)
+        {
+            lastFlipTime = timer;
+            d.gravityScale = -d.gravityScale;
+            fl.rotation = Quaternion.Euler(fl.rotation.eulerAngles.x + 180, fl.rotation.eulerAngles.y, fl.rotation.eulerAngles.z);
         }
     }
 }
