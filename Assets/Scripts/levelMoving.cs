@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class levelMoving : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
+    public float levelSpeed;
     void Update()
     {
-        transform.Translate(Vector2.left * Time.deltaTime * 2.5f);
+        transform.Translate(Vector2.left * Time.deltaTime * levelSpeed);
     }
 }

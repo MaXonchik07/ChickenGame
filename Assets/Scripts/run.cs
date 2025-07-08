@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.Collections;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
@@ -13,19 +14,28 @@ public class run : MonoBehaviour
 {
     Rigidbody2D d;
     Transform fl;
+    public float movetimer = 3;
+    public float cdTime = 0.5f;
+    private float timer;
+    private float lastFlipTime = 0;
+    public float test;
     void Start()
     {
         d = GetComponent<Rigidbody2D>();
         fl = GetComponent<Transform>();
+        
     }
     void FixedUpdate()
     {
-        if (transform.position.x <= 0)
+        timer += Time.deltaTime;
+        if (timer <= movetimer)
         {
             transform.Translate(Vector2.right * Time.deltaTime * 2);
+
         }
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) && timer >= lastFlipTime + cdTime)
         {
+            lastFlipTime = timer;
             d.gravityScale = -d.gravityScale;
             fl.rotation = Quaternion.Euler(fl.rotation.eulerAngles.x+180, fl.rotation.eulerAngles.y, fl.rotation.eulerAngles.z);
 
