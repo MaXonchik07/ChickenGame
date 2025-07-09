@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 639ba763b454e734aa6f7ac2fcd0ced4
+guid: 125d982c9cc3acf4d9e232f67ab0bcf7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cute Chicken 2 walk YELLOW_0
+      name: Cute Chicken 2 walk ORANGE_0
       rect:
         serializedVersion: 2
         x: 2
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 762e38ebcbf3c6746a1fe78c67f2b13a
-      internalID: 2131990959
+      spriteID: 9ebea8603dc577c4c9696a5a795dfdd9
+      internalID: 1597490621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cute Chicken 2 walk YELLOW_1
+      name: Cute Chicken 2 walk ORANGE_1
       rect:
         serializedVersion: 2
         x: 35
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dab3b3ee2c844214eb518875e738d34c
-      internalID: -1269204605
+      spriteID: 45f7c8bb56848274f9d33219dacef29d
+      internalID: 80297383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cute Chicken 2 walk YELLOW_2
+      name: Cute Chicken 2 walk ORANGE_2
       rect:
         serializedVersion: 2
         x: 67
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eca103a3453a6fe4781be9b84a7416ca
-      internalID: 1716315709
+      spriteID: d3d53b21e7074434f9cd30798022225e
+      internalID: 1802106204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cute Chicken 2 walk YELLOW_3
+      name: Cute Chicken 2 walk ORANGE_3
       rect:
         serializedVersion: 2
         x: 98
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88b4f5cde2c3f414590a8fc9e38422db
-      internalID: -499825567
+      spriteID: d583d1485bbbb0441b5320d3664af3db
+      internalID: 2078591279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cute Chicken 2 walk YELLOW_4
+      name: Cute Chicken 2 walk ORANGE_4
       rect:
         serializedVersion: 2
         x: 131
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e146ba897db3db41b1160b2db656465
-      internalID: 184827055
+      spriteID: 6837709d98773fd419f927bdd6f8e11a
+      internalID: -77998737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cute Chicken 2 walk YELLOW_5
+      name: Cute Chicken 2 walk ORANGE_5
       rect:
         serializedVersion: 2
         x: 163
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a29431c840559fd418f461e2864f186a
-      internalID: -117385653
+      spriteID: 9c28074e24f76c545931772303af5981
+      internalID: 1341946166
       vertices: []
       indices: 
       edges: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cute Chicken 2 walk YELLOW_0: 2131990959
-      Cute Chicken 2 walk YELLOW_1: -1269204605
-      Cute Chicken 2 walk YELLOW_2: 1716315709
-      Cute Chicken 2 walk YELLOW_3: -499825567
-      Cute Chicken 2 walk YELLOW_4: 184827055
-      Cute Chicken 2 walk YELLOW_5: -117385653
+      Cute Chicken 2 walk ORANGE_0: 1597490621
+      Cute Chicken 2 walk ORANGE_1: 80297383
+      Cute Chicken 2 walk ORANGE_2: 1802106204
+      Cute Chicken 2 walk ORANGE_3: 2078591279
+      Cute Chicken 2 walk ORANGE_4: -77998737
+      Cute Chicken 2 walk ORANGE_5: 1341946166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

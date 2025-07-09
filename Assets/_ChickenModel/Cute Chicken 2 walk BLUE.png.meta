@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cute Chicken 2 walk BLUE_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 27
+        height: 28
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82990c6b297c50a488f572c03d321172
+      internalID: 1939932993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute Chicken 2 walk BLUE_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3
+        width: 25
+        height: 27
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9590cbc894ed61b4eaf4b1cdc2d333fa
+      internalID: -1579055898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute Chicken 2 walk BLUE_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 3
+        width: 25
+        height: 28
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cc33418560efe4a85af8bb494bf618
+      internalID: 1010774969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute Chicken 2 walk BLUE_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3
+        width: 27
+        height: 28
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fb44801ae3fd0419a585367ae6b06b
+      internalID: -324090058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute Chicken 2 walk BLUE_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 25
+        height: 27
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a1e6742ac094d4585b3ac655a080ce
+      internalID: 2045118832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute Chicken 2 walk BLUE_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 25
+        height: 28
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92fdd94483da0542b7d99a29aeca694
+      internalID: 1053847494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cute Chicken 2 walk BLUE_0: 1939932993
+      Cute Chicken 2 walk BLUE_1: -1579055898
+      Cute Chicken 2 walk BLUE_2: 1010774969
+      Cute Chicken 2 walk BLUE_3: -324090058
+      Cute Chicken 2 walk BLUE_4: 2045118832
+      Cute Chicken 2 walk BLUE_5: 1053847494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
