@@ -26,7 +26,6 @@ public class run : MonoBehaviour
     {
         d = GetComponent<Rigidbody2D>();
         fl = GetComponent<Transform>();
-
     }
     void FixedUpdate()
     {

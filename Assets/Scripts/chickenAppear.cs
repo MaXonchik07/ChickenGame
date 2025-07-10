@@ -5,21 +5,20 @@ using UnityEngine.UI;
 
 public class chickenAppear : MonoBehaviour
 {
-    public GameObject[] chickenPrefabs;  // Префаб курицы
-    public GameObject[] buttonPrefabs;   // Префаб кнопки (Image + Button)
-    public Transform chickenParent;  // Куда спавнить куриц
-    public Transform buttonParent;  // Куда размещать кнопки
-
+    public GameObject[] chickenPrefabs; 
+    public GameObject[] buttonPrefabs;  
+    public Transform chickenParent;  
+    public Transform buttonParent;  
     public Transform[] spawnPoints;
 
     void Start()
     {
         SpawnAllChickens();
     }
-
+    
     void SpawnAllChickens()
     {
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < GameManager.Instance.playerCount; i++)
         {
             GameObject chicken = Instantiate(chickenPrefabs[i], spawnPoints[i].position, i%2==0 ? Quaternion.identity:Quaternion.Euler(180, 0, 0),chickenParent);
             chicken.GetComponent<Rigidbody2D>().gravityScale = i%2==0 ? 5 : -5;
