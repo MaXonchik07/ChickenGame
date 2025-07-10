@@ -7,38 +7,17 @@ public class SceneLoad : MonoBehaviour
 {   
     public void Two()
     {
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.SetPlayerCount(2);
-            SceneManager.LoadScene("LevelsOption");
-        }
-        else
-        {
-            Debug.LogError("GameManager не найден!");
-        }
+        GameManager.Instance.SetPlayerCount(2);
+        SceneManager.LoadScene("LevelsOption");
     }
     public void Three()
     {
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.SetPlayerCount(3);
-            SceneManager.LoadScene("LevelsOption");
-        }
-        else
-        {
-            Debug.LogError("GameManager не найден!");
-        }
+        GameManager.Instance.SetPlayerCount(3);
+        SceneManager.LoadScene("LevelsOption");
     }
         public void Four()
     {
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.SetPlayerCount(4);   
-            SceneManager.LoadScene("LevelsOption");
-        }
-        else
-        {
-            Debug.LogError("GameManager не найден!");
-        }
+        GameManager.Instance.SetPlayerCount(4);   
+        SceneManager.LoadScene("LevelsOption");
     }
 }

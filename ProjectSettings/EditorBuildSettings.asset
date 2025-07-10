@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelsMenu.unity
     guid: 797be3f981ad7e347a493d74f586f26e
   - enabled: 1
-    path: Assets/Scenes/LelelsOption.unity
+    path: Assets/Scenes/LevelsOption.unity
     guid: 98b8464f607ab9e47bee1615029488b4
   - enabled: 1
     path: Assets/Scenes/Level_1.unity

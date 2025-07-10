@@ -13,8 +13,8 @@ using UnityEngine.UIElements;
 
 public class run : MonoBehaviour
 {
-    Rigidbody2D d;
-    Transform fl;
+    Rigidbody2D rigid;
+    Transform transf;
     public float movetimer = 3;
     public float cdTime = 0.5f;
     private float timer;
@@ -24,8 +24,8 @@ public class run : MonoBehaviour
     public GameObject effect;
     void Start()
     {
-        d = GetComponent<Rigidbody2D>();
-        fl = GetComponent<Transform>();
+        rigid = GetComponent<Rigidbody2D>();
+        transf = GetComponent<Transform>();
     }
     void FixedUpdate()
     {
@@ -49,8 +49,8 @@ public class run : MonoBehaviour
         if (timer >= lastFlipTime + cdTime)
         {
             lastFlipTime = timer;
-            d.gravityScale = -d.gravityScale;
-            fl.rotation = Quaternion.Euler(fl.rotation.eulerAngles.x + 180, fl.rotation.eulerAngles.y, fl.rotation.eulerAngles.z);
+            rigid.gravityScale = -rigid.gravityScale;
+            transf.rotation = Quaternion.Euler(transf.rotation.eulerAngles.x + 180, transf.rotation.eulerAngles.y, transf.rotation.eulerAngles.z);
         }
     }
 }
