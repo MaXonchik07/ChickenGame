@@ -10,6 +10,7 @@ using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.XR;
 
 public class run : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class run : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         transf = GetComponent<Transform>();
+        
     }
     void FixedUpdate()
     {
@@ -35,9 +37,14 @@ public class run : MonoBehaviour
             transform.Translate(Vector2.right * Time.deltaTime * speed);
 
         }
+        Vector2 screenPos = Camera.main.WorldToViewportPoint(transform.position);
+        if ((screenPos.x < 0 || screenPos.y > 1 || screenPos.y < 0) && timer >= movetimer)
+        {
+            Destroy(gameObject);
+            Instantiate(effect, transform.position, quaternion.identity);
+        }
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
+    void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("kill"))
         {
             Destroy(gameObject);
