@@ -17,12 +17,13 @@ public class run : MonoBehaviour
     Rigidbody2D rigid;
     Transform transf;
     public float movetimer = 3;
-    public float cdTime = 0.5f;
+    public float cdTime = 0.25f;
     private float timer;
     private float lastFlipTime = 0;
     public float test;
     public float speed = 3;
     public GameObject effect;
+    private bool onGround = false;
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -44,16 +45,28 @@ public class run : MonoBehaviour
             Instantiate(effect, transform.position, quaternion.identity);
         }
     }
-    void OnCollisionEnter2D(Collision2D collision) {
+    void OnCollisionEnter2D(Collision2D collision)
+    {
         if (collision.gameObject.CompareTag("kill"))
         {
             Destroy(gameObject);
             Instantiate(effect, transform.position, quaternion.identity);
         }
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            onGround = true;
+        }
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            onGround = false;
+        }
     }
     public void jumpButton()
     {
-        if (timer >= lastFlipTime + cdTime)
+        if (onGround == true)
         {
             lastFlipTime = timer;
             rigid.gravityScale = -rigid.gravityScale;

@@ -21,7 +21,7 @@ public class chickenAppear : MonoBehaviour
         for (int i = 0; i < countOfChicken; i++)
         {
             GameObject chicken = Instantiate(chickenPrefabs[i], spawnPoints[i].position, i%2==0 ? Quaternion.identity:Quaternion.Euler(180, 0, 0),chickenParent);
-            chicken.GetComponent<Rigidbody2D>().gravityScale = i%2==0 ? 5 : -5;
+            chicken.GetComponent<Rigidbody2D>().gravityScale = i%2==0 ? 14 : -14;
             GameObject button = Instantiate(buttonPrefabs[i], buttonParent);
             button.GetComponent<Button>().onClick.AddListener(() => chicken.GetComponent<run>().jumpButton());
         }
