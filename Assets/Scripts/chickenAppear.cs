@@ -14,6 +14,7 @@ public class chickenAppear : MonoBehaviour
     void Start()
     {
         SpawnAllChickens();
+        
     }
     
     void SpawnAllChickens()
