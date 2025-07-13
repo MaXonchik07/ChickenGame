@@ -355,9 +355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1b492e874521849b408846b576c977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 209600868}
-  hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
 --- !u!82 &209600868
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1490,10 +1487,10 @@ GameObject:
   - component: {fileID: 1435057195}
   - component: {fileID: 1435057194}
   - component: {fileID: 1435057193}
-  - component: {fileID: 1435057196}
   - component: {fileID: 1435057199}
   - component: {fileID: 1435057198}
   - component: {fileID: 1435057197}
+  - component: {fileID: 1435057200}
   m_Layer: 5
   m_Name: "\u041D\u0430\u0437\u0430\u0434"
   m_TagString: Untagged
@@ -1565,7 +1562,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1435057196}
+      - m_Target: {fileID: 1435057200}
         m_TargetAssemblyTypeName: ButtonOpenScene, Assembly-CSharp
         m_MethodName: OpenScene
         m_Mode: 1
@@ -1615,19 +1612,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435057191}
   m_CullTransparentMesh: 1
---- !u!114 &1435057196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435057191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1ccc6df1026584ebfdcc6b2e9afb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 0
 --- !u!114 &1435057197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,7 +1666,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1435057191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1b492e874521849b408846b576c977, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b152da214f167443a847a89b9f41c93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1435057199}
@@ -1698,8 +1682,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1784,6 +1768,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1435057200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435057191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df302aa80a7c3274f9ba4c954c69c7a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
 --- !u!1 &1480324067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +1796,7 @@ GameObject:
   - component: {fileID: 1480324074}
   - component: {fileID: 1480324073}
   - component: {fileID: 1480324072}
+  - component: {fileID: 1480324075}
   m_Layer: 5
   m_Name: "1 \u0443\u0440\u043E\u0432\u0435\u043D\u044C"
   m_TagString: Untagged
@@ -1962,7 +1960,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1480324067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1b492e874521849b408846b576c977, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b152da214f167443a847a89b9f41c93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1480324074}
@@ -1978,8 +1976,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2064,6 +2062,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1480324075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480324067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df302aa80a7c3274f9ba4c954c69c7a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
 --- !u!1 &1506259899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,9 +2258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1b492e874521849b408846b576c977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 1516801655}
-  hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
 --- !u!82 &1516801655
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2527,9 +2535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1b492e874521849b408846b576c977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 1619752994}
-  hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
 --- !u!82 &1619752994
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2943,9 +2948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1b492e874521849b408846b576c977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 1816995448}
-  hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
 --- !u!82 &1816995448
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3137,8 +3139,8 @@ GameObject:
   - component: {fileID: 2045034621}
   - component: {fileID: 2045034620}
   - component: {fileID: 2045034619}
-  - component: {fileID: 2045034618}
   - component: {fileID: 2045034617}
+  - component: {fileID: 2045034623}
   m_Layer: 5
   m_Name: "2 \u0443\u0440\u043E\u0432\u0435\u043D\u044C"
   m_TagString: Untagged
@@ -3183,7 +3185,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2045034618}
+        - m_Target: {fileID: 2045034623}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -3199,7 +3201,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2045034618}
+        - m_Target: {fileID: 2045034623}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -3211,21 +3213,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &2045034618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045034615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1b492e874521849b408846b576c977, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myFx: {fileID: 2045034619}
-  hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
 --- !u!82 &2045034619
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3236,8 +3223,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3404,6 +3391,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045034615}
   m_CullTransparentMesh: 1
+--- !u!114 &2045034623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045034615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b152da214f167443a847a89b9f41c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myFx: {fileID: 2045034619}
+  hoverFx: {fileID: 0}
+  clickFx: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

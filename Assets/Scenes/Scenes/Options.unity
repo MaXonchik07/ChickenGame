@@ -864,6 +864,8 @@ GameObject:
   - component: {fileID: 1444816420}
   - component: {fileID: 1444816419}
   - component: {fileID: 1444816418}
+  - component: {fileID: 1444816427}
+  - component: {fileID: 1444816426}
   m_Layer: 5
   m_Name: "\u0417\u0432\u0443\u043A\u043E\u0432\u044B\u0435 \u044D\u0444\u0435\u043A\u0442\u044B "
   m_TagString: Untagged
@@ -1084,7 +1086,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1444816421}
+      - m_Target: {fileID: 1444816426}
         m_TargetAssemblyTypeName: ButtonOpenScene, Assembly-CSharp
         m_MethodName: OpenScene
         m_Mode: 1
@@ -1154,6 +1156,34 @@ RectTransform:
   m_AnchoredPosition: {x: 11.360563, y: 270.34482}
   m_SizeDelta: {x: 234.82, y: 95.49}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1444816426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444816417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df302aa80a7c3274f9ba4c954c69c7a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+--- !u!114 &1444816427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444816417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b152da214f167443a847a89b9f41c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myFx: {fileID: 0}
+  hoverFx: {fileID: 0}
+  clickFx: {fileID: 0}
 --- !u!1 &1786082499
 GameObject:
   m_ObjectHideFlags: 0
