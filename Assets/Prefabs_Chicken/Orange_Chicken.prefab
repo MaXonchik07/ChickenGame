@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movetimer: 2
-  cdTime: 0.5
+  cdTime: 0.25
   test: 1
   speed: 9
   effect: {fileID: 5103039501837044197, guid: ec3263571dda4f143aedf39dc851fb47, type: 3}
