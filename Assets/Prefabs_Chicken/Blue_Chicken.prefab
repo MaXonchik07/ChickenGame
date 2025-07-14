@@ -122,9 +122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movetimer: 2
-  cdTime: 0.25
+  cdTime: 0.1
   test: 1
   speed: 9
+  ChickenName: Blue Chicken
   effect: {fileID: 5103039501837044197, guid: ec3263571dda4f143aedf39dc851fb47, type: 3}
 --- !u!50 &2157039650152779601
 Rigidbody2D:

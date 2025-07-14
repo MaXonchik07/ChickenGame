@@ -7,6 +7,7 @@ TagManager:
   - kill
   - Ground
   - boost
+  - finishe
   layers:
   - Default
   - TransparentFX

@@ -22,6 +22,7 @@ public class run : MonoBehaviour
     private float lastFlipTime = 0;
     public float test;
     public float speed = 3;
+    public string ChickenName;
     public GameObject effect;
     private bool onGround = false;
     void Start()
@@ -63,6 +64,10 @@ public class run : MonoBehaviour
         {
             onGround = false;
         }
+    }
+    public void ToDest()
+    {
+        Destroy(gameObject);
     }
     public void jumpButton()
     {

@@ -16,53 +16,53 @@ public class WinnerManager : MonoBehaviour
     void Start()
     {
         WinnerMenuu.SetActive(false);
-        // nextLevel.onClick.AddListener(LoadNextLevel);
-        // restartLevel.onClick.AddListener(RestartLevel);
-        // levelsMenu.onClick.AddListener(ReturnToMainMenu);
+        nextLevel.onClick.AddListener(LoadNextLevel);
+        restartLevel.onClick.AddListener(RestartLevel);
+        levelsMenu.onClick.AddListener(ReturnToMainMenu);
     }
-    // void FixedUpdate()
-    // {
-    //     if (gameStop) return;
-    //     GameObject[] chickens = GameObject.FindGameObjectsWithTag("Player"); 
-    //     if (chickens.Length == 1)
-    //     {
-    //         string winner = chickens[0].name.Replace("(Clone)", "").Replace("_", " "); 
-    //         ShowWinner(winner);
-    //         WinnerMenuu.SetActive(true);
-    //         StopGame();
-    //     }
-    //     else if (chickens.Length == 0)
-    //     {
-    //         winText.text = "No one wins!";
-    //         WinnerMenuu.SetActive(true);
-    //         StopGame();
-    //     }
-    // }
-    // void LoadNextLevel()
-    // {
-    //     Time.timeScale = 1f;
-    //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    // }
+    void FixedUpdate()
+    {
+        if (gameStop) return;
+        GameObject[] chickens = GameObject.FindGameObjectsWithTag("Player"); 
+        if (chickens.Length == 1)
+        {
+            string winner = chickens[0].name.Replace("(Clone)", "").Replace("_", " "); 
+            ShowWinner(winner);
+            WinnerMenuu.SetActive(true);
+            StopGame();
+        }
+        else if (chickens.Length == 0)
+        {
+            winText.text = "No one wins!";
+            WinnerMenuu.SetActive(true);
+            StopGame();
+        }
+    }
+    void LoadNextLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
-    // void RestartLevel()
-    // {
-    //     Time.timeScale = 1f; 
-    //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    // }
+    void RestartLevel()
+    {
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
-    // void ReturnToMainMenu()
-    // {
-    //     Time.timeScale = 1f;
-    //     SceneManager.LoadScene(0);
-    // }
-    // void ShowWinner(string winner)
-    // {
-    //     winText.text = $"{winner} wins!"; 
-    // }
+    void ReturnToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
+    public void ShowWinner(string winner)
+    {
+        winText.text = $"{winner} wins!"; 
+    }
 
-    // void StopGame()
-    // {
-    //     gameStop = true;
-    //     Time.timeScale = 0f;
-    // }
+    public void StopGame()
+    {
+        gameStop = true;
+        Time.timeScale = 0f;
+    }
 }
