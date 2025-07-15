@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 088c2e8dd7837e94e8e4c6cb9a0bcf0f
   - enabled: 1
-    path: Assets/Scenes/Scenes/Levels.unity
+    path: Assets/Scenes/Levels.unity
     guid: 51453399b206e2941a5561998902c527
   - enabled: 1
-    path: Assets/Scenes/Scenes/Options.unity
-    guid: 4aba8113157267a4e97092c56ebe9cfb
-  - enabled: 1
-    path: Assets/Scenes/Scenes/Scrimmer.unity
+    path: Assets/Scenes/Scrimmer.unity
     guid: 17dff8cd4aa426d4fa05aeef86b31f37
+  - enabled: 1
+    path: "Assets/Scenes/Player\u0421hoice.unity"
+    guid: d35318de0d829d04da51fadc2046cba1
   m_configObjects: {}
