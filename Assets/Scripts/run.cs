@@ -6,6 +6,7 @@ using TMPro;
 using Unity.Collections;
 using Unity.Mathematics;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +21,6 @@ public class run : MonoBehaviour
     public float cdTime = 0.25f;
     private float timer;
     private float lastFlipTime = 0;
-    public float test;
     public float speed = 3;
     public string ChickenName;
     public GameObject effect;
@@ -29,7 +29,6 @@ public class run : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         transf = GetComponent<Transform>();
-        
     }
     void FixedUpdate()
     {
@@ -37,7 +36,6 @@ public class run : MonoBehaviour
         if (timer <= movetimer)
         {
             transform.Translate(Vector2.right * Time.deltaTime * speed);
-
         }
         Vector2 screenPos = Camera.main.WorldToViewportPoint(transform.position);
         if ((screenPos.x < 0 || screenPos.y > 1 || screenPos.y < 0) && timer >= movetimer)

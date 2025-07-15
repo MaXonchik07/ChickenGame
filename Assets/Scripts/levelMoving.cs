@@ -5,8 +5,16 @@ using UnityEngine;
 public class levelMoving : MonoBehaviour
 {
     public float levelSpeed;
-    void Update()
+    public float end;
+    void FixedUpdate()
     {
-        transform.Translate(Vector2.left * Time.deltaTime * levelSpeed);
+        if (transform.position.x >= end)
+        {
+            transform.Translate(Vector2.left * Time.deltaTime * levelSpeed);
+        }
+        else
+        {
+            
+        }
     }
 }

@@ -24,14 +24,14 @@ public class WinnerManager : MonoBehaviour
     {
         if (gameStop) return;
         GameObject[] chickens = GameObject.FindGameObjectsWithTag("Player"); 
-        if (chickens.Length == 1)
+        if (chickens.Length == -1)
         {
             string winner = chickens[0].name.Replace("(Clone)", "").Replace("_", " "); 
             ShowWinner(winner);
             WinnerMenuu.SetActive(true);
             StopGame();
         }
-        else if (chickens.Length == 0)
+        else if (chickens.Length == -2)
         {
             winText.text = "No one wins!";
             WinnerMenuu.SetActive(true);

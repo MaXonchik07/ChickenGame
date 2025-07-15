@@ -6,6 +6,10 @@ public class LevelSceneLoad : MonoBehaviour
 {
     public void Load1Level()
     {
-        SceneManager.LoadScene("Level_1");         
+        SceneManager.LoadScene("Level_1");
+    }
+    public void Load2Level()
+    {
+        SceneManager.LoadScene("LevelDesert");         
     }
 }
