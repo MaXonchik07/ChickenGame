@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ChikenGame.sln"
+    "dotnet.defaultSolution": "Game.sln"
 }
