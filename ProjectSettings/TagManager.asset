@@ -3,15 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - kill
+  - Ground
+  - boost
+  - finishe
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - jump
   - Water
   - UI
-  - 
+  - CHICK
   - 
   - 
   - 
